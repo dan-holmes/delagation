@@ -1,6 +1,7 @@
 class HRM
-  def initialize(employees = [])
+  def initialize(employees = [], initial_team_size = 10)
     @employees = employees
+    hire(initial_team_size)
   end
 
   def reduce_payroll
